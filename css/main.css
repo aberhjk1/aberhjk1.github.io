@@ -5,6 +5,11 @@ body {
     background-color: lightblue !important;
 }
 
+.container{
+    
+ background-color: #FFFFFF !important;   
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
