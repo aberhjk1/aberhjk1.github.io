@@ -7,6 +7,10 @@ body {
 
 }
 
+.checked {
+    color: orange;
+}
+
 .container{
     
  background-color: #FFFFFF !important;   
