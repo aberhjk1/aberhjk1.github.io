@@ -100,10 +100,26 @@ Coming from a managerial background I have had alot of practice in dealing with 
    One example of really clean re-usable code is that of the EncryptionUtilities class in the API. The EncryptionUtilities class is used to encode a password 
    via salting and hashing the password of a user of the API and also decrypt the password of a user when they are trying to login to the API front end.
    This code is re usable with any login system with a backend database as accepts a string password, and returns a salted/hashed password in return using the built in .NET
-   RNGCryptoServiceProvider class.
+   RNGCryptoServiceProvider class.</p>
    
-   
+   <br>
    <img src="EvidenceImages/hashnsaltmethod.PNG" alt="Hash and Salt method" width="90%"></img><br>
+
+<p>Building on from this code, The Login Method in the AdminController was clear/concise with solid error checking. 
+   This method followed the best practices of ASP.net security and general security practices by ensuring that the password entered once decrypted in the EncryptionUtilities class.
+</p>
+   <br>
+   <img src="EvidenceImages/LoggingIn.PNG" alt="Log in method" width="90%"></img><br>
+
+<br>
+<p>
+   Another method that I believe shows good practices is that of the RegisterNewAdmin method. This method allows an admin to register a new admin to the API, this method makes sure that the
+   username chosen doesn't already exist in the database ensuring that we have unique users of the API, also have a enter password and reenter password input control as an extra bit of security.
+   
+   
+</p>
+<br>
+<img src="EvidenceImages/UniqueUser.PNG" alt="Unique User" width="90%"></img><br>
 </p>
 
 <h3>Evidence:</h3>
