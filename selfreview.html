@@ -116,10 +116,25 @@ Coming from a managerial background I have had alot of practice in dealing with 
    Another method that I believe shows good practices is that of the RegisterNewAdmin method. This method allows an admin to register a new admin to the API, this method makes sure that the
    username chosen doesn't already exist in the database ensuring that we have unique users of the API, also have a enter password and reenter password input control as an extra bit of security.
    
-   
 </p>
 <br>
 <img src="EvidenceImages/UniqueUser.PNG" alt="Unique User" width="90%"></img><br>
+</p>
+
+<h3> Third Party QR Code addition</h3>
+<br>
+<p>
+   With the challenge of accurate GPS tracking currently it was decided that QR codes would be a great alternative to allow the user of Pathmapper to 
+   find information about garden items. To allow an admin to create these QR codes via the front-end of the API, I was tasked with adding the ability to take the data from a QRPoint
+   and returning an image of a QR code that the app would be able to use to load the relevant information about that plant.
+   
+   writing my own QR code creator was out of scope for this project so I turned to a third party library in order to create the QR codes.
+   I researched the different QR code generators available in the Nuget Package manager, and decided that the QRCoder library was the most appropriate for our problem.
+   This library is nice and easy to use, practically allowing me to create a QR Code in 5 lines of code.
+   <br>
+   Below is the code to create a QR Code for a QRPoint using the library:
+   <br>
+   <img src="EvidenceImages/QRCodeThirdParty.PNG" alt="Qr code" width="90%"></img><br>
 </p>
 
 <h3>Evidence:</h3>
