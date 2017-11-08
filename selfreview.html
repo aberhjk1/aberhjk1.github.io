@@ -80,14 +80,14 @@ title: Jordan Aberhart Evidence Portfolio
 <br>
 <p> The CommSoft group projects went through many iterations and changes over project 2, 
    <br> 1. Having the SQL database ERD completely overhauled
-   <br> 2.Rewriting the API,]
+   <br> 2.Rewriting the API,
    <br> 3.Redesigning the Visual Scan Suite tobe usable on a wide range of tablets
    <br> 4.PathMapper having the design and user requirements changing constantly. 
    <br>I believe that I handled problems and changes really well, I consider myself very good at being able to adapt and therefore any change in requirements wasn't an issue for me. Working with 
 Dr Mary Butler as the main point of contact this semester has taught me how to manage the expectations of an external client and the rollercoaster that comes with the desire for more functionality.
 Coming from a managerial background I have had alot of practice in dealing with problems and changing environments. The documentation of the group was also really helpful when having to backtrack or rewrite any code.</p>
 
-I started the pair programming with Matt Tucker as we undertook the creation of the ASP.net Web API part of Pathmapper. This started off by the creation of the SQL Database which would be used to talk with the API which could then be used by any application, in our case, the Pathmapper Android Application. Both having taken OOSD, web three and DB2 we had a fair idea of how to tackle the problem, ensuring that the database was scalable and in third normal form. Taking the knowledge from OOSD when making an API using ASP.net MVC we started by creating a simple GET request to get all the data we had in the database. It wasn’t too long before we ran into our first issue, when working with the ASP.net Project we had real issues with running the solution on two different computers as the NuGet package manager would complain that either my computer was missing packages or Matts’ computer was missing packages, whenever we tried to resolve the issue by installing the packages that were missing it still wouldn’t work. After much research into the problem via various avenues it was decided that we would on one computer. This wasn’t an issue as it allowed us to work together a lot to get it done in a more timely manner. This was a really good example of where the practice of version control can sometimes fall apart.
+I started the pair programming with Matt Tucker as we undertook the creation of the ASP.NET Web API part of Pathmapper. This started off by the creation of the SQL Database which would be used to talk with the API which could then be used by any application, in our case, the Pathmapper Android Application. Both having taken OOSD, web three and DB2 we had a fair idea of how to tackle the problem, ensuring that the database was scalable and in third normal form. Taking the knowledge from OOSD when making an API using ASP.net MVC we started by creating a simple GET request to get all the data we had in the database. It wasn’t too long before we ran into our first issue, when working with the ASP.net Project we had real issues with running the solution on two different computers as the NuGet package manager would complain that either my computer was missing packages or Matts’ computer was missing packages, whenever we tried to resolve the issue by installing the packages that were missing it still wouldn’t work. After much research into the problem via various avenues it was decided that we would on one computer. This wasn’t an issue as it allowed us to work together a lot to get it done in a more timely manner. This was a really good example of where the practice of version control can sometimes fall apart.
 
 The creation of the back end was a really challenging and rewarding process. It was the first time that I had built a RESTful API using ASP.net MVC. This API was built to allow the passing of JSON information and images to the front end android application Pathmapper. We built the application to be as robust and scalable as possible such that other applications could eventually use the information in other projects. Having built a restful API previously in project one and web three, the syntax and general best practices around how an API works and the methods involved in making one was not an issue. We first created some simple GET requests to allow the front end to grab single garden item data. Then once we were confident that this was working correctly we moved on to returning an IEnumerable of a QRPoint, an IEnumerable allowed us to return a JSON encoded array of data members. This was particularly useful in allowing the map in Pathmapper to be populated with markers with the relevant details about that QRPoint (Plant, Statue etc). 
 <p>The changing of the ERD was decided as the original version wasn't scalable and didn't correctly define the definition of the data that
@@ -112,10 +112,10 @@ The creation of the back end was a really challenging and rewarding process. It 
 <span class="fa fa-star-half checked"></span>
 <h2>4.5/5</h2>
 <br>
-<p> I believe the overall quality of my code has definitely improved from project one going into project two. As my programming knowledge grew from OOSD and ADS
-   I had a better understanding of what good code looks like and how to write good code myself. Throughout project two I always tried to follow best practices in regards to the code I wrote
-   keeping the SOLID principles at the forefront of anything I wrote. When writing the ASP.net backend API I made sure that all the GET requests methods were modular and had only one responsibility.
-   having the ability to work together with Matt during the coding process also helped ensure that any code that was written was up to both our standards.
+<p> I believe the overall quality of my code has definitely improved throughout the year. As my programming knowledge grew from OOSD and ADS,
+   I had a better understanding of what good code looks like and how to write good code myself. Throughout Project 2 I always tried to follow best practices in regards to the code I wrote
+   keeping the SOLID principles at the forefront of anything I wrote. When writing the ASP.NET backend API I made sure that all the GET requests methods were modular and had only one responsibility.
+   Working with Matt during the coding process also helped ensure that any code that was written was up to both our standards.
    
    One example of really clean re-usable code is that of the EncryptionUtilities class in the API. The EncryptionUtilities class is used to encode a password 
    via salting and hashing the password of a user of the API and also decrypt the password of a user when they are trying to login to the API front end.
@@ -126,7 +126,7 @@ The creation of the back end was a really challenging and rewarding process. It 
    <img src="EvidenceImages/hashnsaltmethod.PNG" alt="Hash and Salt method" width="90%"></img><br>
 
 <p>Building on from this code, The Login Method in the AdminController was clear/concise with solid error checking. 
-   This method followed the best practices of ASP.net security and general security practices by ensuring that the password entered once decrypted in the EncryptionUtilities class.
+   This method followed the best practices of ASP.NET security and general security practices by ensuring that the password entered once decrypted in the EncryptionUtilities class.
 </p>
    <br>
    <img src="EvidenceImages/LoggingIn.PNG" alt="Log in method" width="90%"></img><br>
@@ -134,7 +134,7 @@ The creation of the back end was a really challenging and rewarding process. It 
 <br>
 <p>
    Another method that I believe shows good practices is that of the RegisterNewAdmin method. This method allows an admin to register a new admin to the API, this method makes sure that the
-   username chosen doesn't already exist in the database ensuring that we have unique users of the API, also have a enter password and reenter password input control as an extra bit of security.
+   username chosen doesn't already exist in the database ensuring that we have unique users of the API, also have a enter password and re-enter password input control as an extra bit of security.
    
 </p>
 <br>
@@ -144,12 +144,12 @@ The creation of the back end was a really challenging and rewarding process. It 
 <h3> Third Party QR Code addition</h3>
 <br>
 <p>
-   With the challenge of accurate GPS tracking currently it was decided that QR codes would be a great alternative to allow the user of Pathmapper to 
-   find information about garden items. To allow an admin to create these QR codes via the front-end of the API, I was tasked with adding the ability to take the data from a QRPoint
+   With the original Pathmapper the main goal was to use GPS to track where in the gardens you were located. However, this was found to be not as accurate as we would have liked. Therfore, instead of accurate GPS tracking with the new application it was decided that QR codes would be a great alternative to allow the user of Pathmapper to 
+   find information about garden items and have an idea of where they are located. We did keep the GPS on the application, but we have tried to emphasise the QR codes as a better way of navigating through the gardens. With the QR codes, I believe it also adds a sense of gamification to the app, getting users to interact with physical objects within the gardens. To allow this feature, we made a front-end API to allow an admin to create these QR codes. I was tasked with adding the ability to take the data from a QRPoint
    and returning an image of a QR code that the app would be able to use to load the relevant information about that plant.
    
-   writing my own QR code creator was out of scope for this project so I turned to a third party library in order to create the QR codes.
-   I researched the different QR code generators available in the Nuget Package manager, and decided that the QRCoder library was the most appropriate for our problem.
+   Writing my own QR code creator was out of scope for this project so I turned to a third party library in order to create the QR codes.
+   I researched the different QR code generators available in the Nuget Package manager, and decided that the QRCoder library was the most appropriate for our problem. It allowed saving of different filetypes, easy modification of the QR image and had the highest download count of all the QR Code packages on NuGet.
    This library is nice and easy to use, practically allowing me to create a QR Code in 5 lines of code.
    <br>
    Below is the code to create a QR Code for a QRPoint using the library:
